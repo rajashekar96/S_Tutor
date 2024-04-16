@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /* color: #fff; */
+}
+body h1{
+    text-align: center;
+    text-decoration: underline rgb(54, 54, 233);
+    color: #fff;
+    font-size: 22px;
+}
+body {
+    background-color:rgb(8, 8, 49);
+    padding: 20px 0;
+}
+
+#nav {
+    margin: 20px 0px;
+    margin-left: 120px;
+    margin-left: 37.8%;
+    
+}
+li a {
+    color: aliceblue;
+    font-weight: 600;
+    text-decoration: none;
+ }
+ ul {
+    display: flex;
+    text-align: right;
+}
+
+ul li{
+    text-align: right;
+    list-style-type: none;
+    display:block;
+    margin: 0 25px;
+}
+ li a:hover{
+     color:rgb(9, 110, 110);
+     transition: 0.3s;
+ }
+
+#card div{
+    background-color:rgb(10, 10, 75);
+    width: 80%px;
+    text-align: center;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 20px 50px;
+    height: 100%;
+}
+#card h2{
+    color: #fff;
+}
+#card p{
+    color: #fff;
+}
+
+textarea {
+    padding: 20px;
+    border-radius: 12px;
+    /* border: none; */
+    font-size: 15px;
+    border-color: rgb(44, 99, 68);
+    outline: none;
+}
+select{
+    padding: 15px;
+    width: 43%;
+    border-radius: 12px;
+    outline: none;
+    font-size: 15px;
+    border-color: rgb(44, 99, 68);
+}
+input{
+    padding: 15px;
+    width: 21.2%;
+    border-radius: 12px;
+    /* border: none; */
+    font-size: 15px;
+    outline: none;
+    border-color: rgb(44, 99, 68);
+}
+#contact {
+    margin: -40px 0;
+}
+#contact i {
+    margin: 0px 20px;
+    color: #fff;
+
+}
+#contact i:hover {
+    color: rgb(9, 110, 110);
+}
+#mail h2{
+    margin: -30px 0;
+    color: #fff;
+}
+
+span a {
+    text-decoration: none;
+    color: rgb(14, 212, 215);
+}
+

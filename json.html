@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let person = {
+        name : "Rahul",
+        age : 25,
+        area : "dsnr"
+    }
+
+    // --------------- its changes into string --------------
+    let personStringify = JSON.stringify(person);
+    localStorage.setItem("personStringify", personStringify);
+    console.log(personStringify)
+    console.log(typeof(personStringify))
+
+    // --------------- After getting ddata from local storage converts into object --------------
+    let stringifyFromLocalStorage = localStorage.getItem("personStringify");
+    let detailsIntoParse = JSON.parse(stringifyFromLocalStorage);
+    console.log(detailsIntoParse);
+    console.log(typeof(detailsIntoParse));
+// </script>
+</html>

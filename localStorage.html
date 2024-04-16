@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalStorage</title>
+</head>
+<body>
+        <textarea name="" id="Message" cols="30" rows="10"></textarea>
+        <br>
+        <button id="bton" onclick="buttton()">Save</button>
+</body>
+
+<script>
+    let message = document.getElementById("Message");
+    let buton = document.getElementById("bton");
+    // let container = document.getElementById("tutooo"); 
+
+    let name = "Rahul";
+    let age = "25";
+    let area = "Dilsukh Nagar";
+
+    localStorage.setItem("name", name);
+    localStorage.setItem("age", age);
+    localStorage.setItem("area", area);
+
+    function buttton() {
+        let userEntered = message.value;
+        localStorage.setItem("userEntered", userEntered)
+
+
+        // ------- just adding creating dynamic paragraph ------
+        
+        // let a = document.createElement("p");  
+        // let v = localStorage.getItem("name");
+        // a.textContent = v
+        // document.body.appendChild(a)
+
+    }
+    let storedValue = localStorage.getItem("userEntered")
+
+    if (storedValue == null) {
+        message.value = " "
+    }
+    else {
+        message.value = storedValue;
+    }
+</script>
+</html>
